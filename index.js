@@ -15,6 +15,7 @@ const handleSubmit = () => {
     if(inputEl.value == "") {
         const taskText = document.getElementById("task-text");
         taskText.innerText = "Enter your task";
+        taskText.style.color = "red";
     } else {
         
     createTodo(inputEl);
