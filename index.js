@@ -12,22 +12,34 @@ const handleSubmit = () => {
  btnEl.addEventListener("click", () => {
     
     const inputEl = document.getElementById("input");
+    if(inputEl.value == "") {
+        const taskText = document.getElementById("task-text");
+        taskText.innerText = "Enter your task";
+    } else {
+        
     createTodo(inputEl);
+    }
    // createNoteEl()
      });
  
 function createNoteEl(){
     let todos = "";
     for (let i = 0; i < todosArray.length; i++) {
+        const taskText = document.getElementById("task-text")
+        if(todos == "") {
+            taskText.innerText = "Tasks"
+        } //else{
+        //     taskText.innerText = ""
+        // }
         todos += `
         <div class="flex flex-jc-sb todo">
         
-        <p>
+        <p class="flex">
             <input type="checkbox" name="todo" id="checkbox" class="checkbox">
           <textarea name="task" id="task" class="task" disabled>${todosArray[i]}</textarea>
         </p>
 
-        <div class="icon">
+        <div class="icon flex">
         <i class="fa-solid fa-pen-to-square edit"></i>
         <i class="fa-solid fa-trash del"></i>
         </div>
@@ -107,11 +119,13 @@ function createNoteEl(){
         const completeBtn = document.querySelectorAll(".checkbox");
         const editBtn = document.querySelectorAll(".edit");
         const todoList = document.querySelectorAll(".todo");
+        const taskEl = document.querySelectorAll(".task");
 
         completeBtn.forEach((cbt, i)=>{
-            cbt.addEventListener("click", ()=>{
-                todoList[i].style.backgroundColor = "green";
+            cbt.addEventListener("input", ()=>{
+                taskEl[i].style.backgroundColor = "#a35709";
                 editBtn[i].style.display = "none";
+                localStorage.setItem("todos", JSON.stringify(todosArray));
 
             })
         })
