@@ -64,12 +64,12 @@ function createNoteEl(){
 
     const activateEdit = () => {
         const editBtn = document.querySelectorAll(".edit");
-        const upadateTodo = document.querySelectorAll(".update-todo");
+        const updateTodo = document.querySelectorAll(".update-todo");
         const taskEl = document.querySelectorAll(".task");
 
         editBtn.forEach((eb, i)=>{
             eb.addEventListener("click", ()=>{
-                upadateTodo[i].style.display = "block";
+                updateTodo[i].style.display = "block";
                 taskEl[i].disabled = false;
             })
         })
@@ -87,11 +87,11 @@ function createNoteEl(){
 
     const activateCancelBtn = () => {
         const cancelBtn = document.querySelectorAll(".cancel");
-        const upadateTodo = document.querySelectorAll(".update-todo");
+        const updateTodo = document.querySelectorAll(".update-todo");
         const taskEl = document.querySelectorAll(".task");
         cancelBtn.forEach((cb, i)=>{
             cb.addEventListener("click", ()=>{
-                upadateTodo[i].style.display = "none";
+                updateTodo[i].style.display = "none";
                 taskEl[i].disabled = true;
             })
         })
