@@ -42,6 +42,7 @@ function createNoteEl(){
         
         <div class="icon flex">
         <i class="fa-solid fa-pen-to-square edit"></i>
+        <span class="span">Completed</span>
         <i class="fa-solid fa-trash del"></i>
         </div>
         <div class="update-todo">
@@ -121,11 +122,13 @@ function createNoteEl(){
         const editBtn = document.querySelectorAll(".edit");
         const todoList = document.querySelectorAll(".todo");
         const taskEl = document.querySelectorAll(".task");
+        const spanEl = document.querySelectorAll(".span");
 
         completeBtn.forEach((cbt, i)=>{
             cbt.addEventListener("input", ()=>{
                 taskEl[i].style.backgroundColor = "#a35709";
                 editBtn[i].style.display = "none";
+                spanEl[i].classList.remove("span")
                 localStorage.setItem("todos", JSON.stringify(todosArray));
 
             })

@@ -109,6 +109,9 @@ body {
   padding-left: 1rem;
   color: #ff8303;
 }
+.container .todo-container .todo .icon .span {
+  display: none;
+}
 .container .todo-container .todo .icon .edit {
   padding-right: 0.5rem;
 }

@@ -82,6 +82,9 @@
         padding-left: 1rem;
         color: $color;
         //margin-right: 9.375rem;
+        .span {
+            display: none;
+        }
 
         .edit {
             padding-right: 0.5rem;
