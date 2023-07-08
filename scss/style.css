@@ -46,7 +46,7 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 40px;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 }
 .container {
@@ -77,12 +77,6 @@ body {
 }
 .container form input:focus {
   outline: 1px solid #a35709;
-}
-.container form button {
-  color: #ff8303;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.55rem;
-  border: 1px solid #a35709;
 }
 .container .todo-container {
   max-width: 90%;
@@ -120,4 +114,10 @@ body {
 }
 .container .todo-container .todo .update-todo {
   display: none;
+}
+.container button {
+  color: #ff8303;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.55rem;
+  border: 1px solid #a35709;
 }/*# sourceMappingURL=style.css.map */

@@ -39,7 +39,7 @@ function createNoteEl(){
             <input type="checkbox" name="todo" id="checkbox" class="checkbox">
           <textarea name="task" id="task" class="task" disabled>${todosArray[i]}</textarea>
         </p>
-
+        
         <div class="icon flex">
         <i class="fa-solid fa-pen-to-square edit"></i>
         <i class="fa-solid fa-trash del"></i>

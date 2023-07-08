@@ -34,13 +34,7 @@
             outline: 1px solid $borderColor;
         }
 
-        button {
-          
-            color: $color;
-            background-color: rgba(0, 0, 0, .5);
-            padding: 0.55rem;
-            border: 1px solid $borderColor;
-        }
+       
     }
 
 
@@ -98,6 +92,14 @@
         display: none;
     }
 }
+    }
+
+    button {
+          
+        color: $color;
+        background-color: rgba(0, 0, 0, .5);
+        padding: 0.55rem;
+        border: 1px solid $borderColor;
     }
  
 }
