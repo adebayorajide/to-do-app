@@ -1,0 +1,22 @@
+ @media(max-width: 576px) {
+    .todo {
+        p{
+            display: grid;
+            grid-template-columns: auto auto;
+            //padding-top: 40px;
+          padding-left: 1.5rem;
+            .task {
+                min-width:100px ;
+            }
+        }
+       
+   
+      .icon {
+           display: grid;
+           grid-template-columns: auto auto;
+           padding-top: 40px;
+         padding-left: 1.5rem 
+   }
+    }
+
+ }

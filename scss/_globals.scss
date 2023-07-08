@@ -1,0 +1,39 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $bgColor;
+    color: $white;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+//flexbox
+.flex {
+    display: flex;
+
+    &-fd-cl {
+        flex-direction: column;
+    }
+
+    &-jc-sb {
+        justify-content: space-evenly;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}

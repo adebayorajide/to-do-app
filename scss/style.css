@@ -1,0 +1,107 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(283, 39%, 40%);
+  color: #fff;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+.flex-fd-cl {
+  flex-direction: column;
+}
+.flex-jc-sb {
+  justify-content: space-evenly;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .todo p {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 1.5rem;
+  }
+  .todo p .task {
+    min-width: 100px;
+  }
+  .todo .icon {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 40px;
+    padding-left: 1.5rem;
+  }
+}
+.container {
+  margin: auto;
+  text-align: center;
+  padding-left: 1.875rem;
+}
+.container h1 {
+  margin-left: -6.25rem;
+}
+.container h4 {
+  text-align: center;
+  margin-left: -6.25rem;
+}
+.container form {
+  width: 80vw;
+}
+.container form input {
+  padding: 0.5rem 1rem;
+  margin-right: -0.3125rem;
+  margin-left: 1rem;
+  text-align: center;
+  outline: none;
+}
+.container form button {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.66rem;
+  border: none;
+}
+.container .todo-container {
+  max-width: 90%;
+  height: auto;
+}
+.container .todo-container .todo {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.625rem;
+  margin-top: 4rem;
+}
+.container .todo-container .todo p .task {
+  outline: none;
+  min-width: 300px;
+  padding: 0.3125rem;
+  text-align: center;
+  resize: none;
+  margin-bottom: -0.4rem;
+}
+.container .todo-container .todo .icon {
+  padding-top: 0.9375rem;
+  margin-top: 0.75rem;
+}
+.container .todo-container .todo .icon .edit {
+  padding-right: 0.5rem;
+}
+.container .todo-container .todo .update-todo {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
