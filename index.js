@@ -42,7 +42,6 @@ function createNoteEl(){
         
         <div class="icon flex">
         <i class="fa-solid fa-pen-to-square edit"></i>
-        <span class="span">Completed</span>
         <i class="fa-solid fa-trash del"></i>
         </div>
         <div class="update-todo">

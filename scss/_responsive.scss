@@ -1,12 +1,13 @@
- @media(max-width: 576px) {
+ @media screen and (max-width: 576px) {
     .todo {
         p{
             display: grid;
             grid-template-columns: auto auto;
             //padding-top: 40px;
-          padding-left: 1.5rem;
+             //padding-right: 1rem;
+             margin-left: 1rem;
             .task {
-                min-width:100px ;
+                min-width:5.625rem;
             }
         }
        
@@ -15,7 +16,8 @@
            display: grid;
            grid-template-columns: auto auto;
            padding-top: 40px;
-         padding: 0 0.5rem 
+           //padding: 0 0.5rem ;
+          margin-left: -1rem;
    }
     }
 

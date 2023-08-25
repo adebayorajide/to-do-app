@@ -3,21 +3,21 @@
     // background-color: $white;
     // color: #000;
     text-align: center;
-    padding-left: 1.875rem;
+    padding: 0 1.875rem;
 
     h1 {
-        margin-left: -6.25rem;
+        text-align: center;
     }
 
     h4 {
        text-align: center;
-       margin-left: -6.25rem;
+
      }
 
     form {
         width: 90%;
-        margin-left: -20px;
-       // margin-right: -50px;
+       // margin-left: 1rem;
+        // margin-right: -50px;
         input {
             background-color: $areaColor;
             color: $white;
@@ -60,7 +60,7 @@
             opacity: .8;
             border: 1px solid $borderColor;
            // position: relative;
-            min-width: 300px;
+            min-width: 14rem;
             padding: 0.3125rem;
             text-align: center;
             resize: none;
@@ -79,7 +79,7 @@
         // position: absolute;
         // right: 0;
         margin-top: 0.75rem;
-        padding-left: 1rem;
+        margin-left: 1rem;
         color: $color;
         //margin-right: 9.375rem;
         .span {

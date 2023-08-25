@@ -33,37 +33,35 @@ body {
   align-items: center;
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .todo p {
     display: grid;
     grid-template-columns: auto auto;
-    padding-left: 1.5rem;
+    margin-left: 1rem;
   }
   .todo p .task {
-    min-width: 100px;
+    min-width: 5.625rem;
   }
   .todo .icon {
     display: grid;
     grid-template-columns: auto auto;
     padding-top: 40px;
-    padding: 0 0.5rem;
+    margin-left: -1rem;
   }
 }
 .container {
   margin: auto;
   text-align: center;
-  padding-left: 1.875rem;
+  padding: 0 1.875rem;
 }
 .container h1 {
-  margin-left: -6.25rem;
+  text-align: center;
 }
 .container h4 {
   text-align: center;
-  margin-left: -6.25rem;
 }
 .container form {
   width: 90%;
-  margin-left: -20px;
 }
 .container form input {
   background-color: #1f1e1b;
@@ -93,7 +91,7 @@ body {
   color: #fbe3ca;
   opacity: 0.8;
   border: 1px solid #a35709;
-  min-width: 300px;
+  min-width: 14rem;
   padding: 0.3125rem;
   text-align: center;
   resize: none;
@@ -106,7 +104,7 @@ body {
 .container .todo-container .todo .icon {
   padding-top: 0.9375rem;
   margin-top: 0.75rem;
-  padding-left: 1rem;
+  margin-left: 1rem;
   color: #ff8303;
 }
 .container .todo-container .todo .icon .span {
